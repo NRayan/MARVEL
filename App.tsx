@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components/native";
 import { Home, Loading } from "./src/pages";
 import { theme } from "./src/theme";
+import { StatusBar } from "expo-status-bar";
 
 export default function App() {
 
@@ -18,14 +19,18 @@ export default function App() {
 	}, [fontsLoaded]);
 
 	return (
-		<ThemeProvider theme={theme}>
-			{
-				loading ?
-					<Loading />
-					:
-					<Home />
-			}
-		</ThemeProvider>
+		<>
+			<StatusBar backgroundColor="transparent" style="light" translucent />
+			<ThemeProvider theme={theme}>
+				{
+					loading ?
+						<Loading />
+						:
+						<Home />
+				}
+			</ThemeProvider>
+		</>
+		
 	);
 
 }
