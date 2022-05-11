@@ -7,14 +7,8 @@ export const Container = styled.View`
     padding-top: ${({ theme }) => theme.paddings.vertical};
 `;
 
-export const Title = styled.Text`
-    color:${({ theme }) => theme.colors.text};
-    font-family: ${({ theme }) => theme.fonts[600]};
-    font-size: 22px;
-`
-
-export const Header = styled.View`
+export const Buttons = styled.View`
+margin-top: 20px;
 flex-direction:row;
-justify-content: space-between;
 align-items: center;
 `

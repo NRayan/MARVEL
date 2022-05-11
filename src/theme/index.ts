@@ -31,6 +31,6 @@ export const theme: ThemeProps =
 	},
 	paddings: {
 		horizontal: "8%",
-		vertical: "5%"
+		vertical: "8%"
 	}
 };
