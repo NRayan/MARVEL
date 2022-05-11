@@ -1,6 +1,6 @@
 import { fireEvent, render } from "@testing-library/react-native";
 import React from "react";
-import App from "./App";
+import App from "../App";
 
 it("Should create an item", () => {
 	const { getByText, getByPlaceholderText } = render(<App />);

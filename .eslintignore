@@ -1,2 +1,5 @@
 *.json
 *.test.js
+*.config.js
+*styles.ts
+*d.ts
