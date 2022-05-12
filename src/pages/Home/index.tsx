@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import { useTheme } from "styled-components/native";
-import { CharactersList, HomeHeader, TabButton } from "../../components";
+import { CharactersList, ComicsList, HomeHeader, TabButton } from "../../components";
 import { Buttons, Container } from "./styles";
 
 enum selecionOption {
@@ -14,7 +14,6 @@ export function Home() {
 	const theme = useTheme();
 
 	const [selected, setSelected] = useState<selecionOption>(1);
-
 
 	return (
 		<Container>
@@ -29,7 +28,7 @@ export function Home() {
 				selected === selecionOption.characters ?
 					<CharactersList />
 					:
-					<CharactersList />
+					<ComicsList />
 			}
 
 		</Container>

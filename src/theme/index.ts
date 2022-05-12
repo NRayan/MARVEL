@@ -30,7 +30,7 @@ export const theme: ThemeProps =
 		"700": "Inter_600SemiBold",
 	},
 	paddings: {
-		horizontal: "8%",
+		horizontal: "5%",
 		vertical: "8%"
 	}
 };
