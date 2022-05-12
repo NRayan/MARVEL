@@ -8,7 +8,7 @@ export const Container = styled.View`
 `;
 
 export const Buttons = styled.View`
-margin-top: 20px;
+margin: 20px 0;
 flex-direction:row;
 align-items: center;
 `
