@@ -1,3 +1,5 @@
+import { CompositeNavigationProp } from "@react-navigation/native";
+
 export type CharacterProps =
     {
         id: number,
@@ -13,6 +15,7 @@ export type CharacterProps =
 
 export type CharacterQueryMounterProps =
     {
+        nameStartsWith: string,
         offset: number,
         limit: number
     }

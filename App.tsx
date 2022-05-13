@@ -1,16 +1,20 @@
 import { Inter_400Regular, Inter_500Medium, Inter_600SemiBold, Inter_700Bold, useFonts } from "@expo-google-fonts/inter";
+import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components/native";
-import { Home, Loading } from "./src/pages";
+import { Loading } from "./src/pages";
+import { Routes } from "./src/routes";
 import { theme } from "./src/theme";
-import { StatusBar } from "expo-status-bar";
 
 export default function App() {
 
 	const [loading, setLoading] = useState(true);
 
 	const [fontsLoaded] = useFonts({
-		Inter_400Regular, Inter_500Medium, Inter_600SemiBold, Inter_700Bold
+		Inter_400Regular,
+		Inter_500Medium,
+		Inter_600SemiBold,
+		Inter_700Bold
 	});
 
 	useEffect(() => {
@@ -26,11 +30,11 @@ export default function App() {
 					loading ?
 						<Loading />
 						:
-						<Home />
+						<Routes />
 				}
 			</ThemeProvider>
 		</>
-		
+
 	);
 
 }

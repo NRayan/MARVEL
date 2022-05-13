@@ -1,2 +1,3 @@
-export { Loading } from "./Loading";
-export { Home } from "./Home";
+export { Loading } from "./loading";
+export { Home } from "./home";
+export { SearchCharacters } from "./searchCharacters";

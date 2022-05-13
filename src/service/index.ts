@@ -9,13 +9,13 @@ const charactersGetLimit = 10;
 
 export const requests =
 {
-	async getCharacters(page: number): Promise<CharactersGetProps> {
+	async getCharacters(page: number, searchText: string): Promise<CharactersGetProps> {
 		try {
 
 			const initialQuery = serviceUtils.mountInitialQuery(PUBLIC_KEY, PRIVATE_KEY);
-			const otherQueries = serviceUtils.mountQuery({ limit: charactersGetLimit, offset: serviceUtils.generateCallOffset(page,charactersGetLimit) });
+			const otherQueries = serviceUtils.mountQuery({ limit: charactersGetLimit, offset: serviceUtils.generateCallOffset(page, charactersGetLimit), nameStartsWith: searchText });
 
-			console.log(initialQuery + otherQueries);
+			// console.log(initialQuery + otherQueries);
 
 			const { data } = await requester.get("/characters?" + initialQuery + otherQueries);
 			const characters = data.data.results.map(serviceUtils.mapCharacterDTO);
