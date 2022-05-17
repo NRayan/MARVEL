@@ -1,5 +1,3 @@
-import { CompositeNavigationProp } from "@react-navigation/native";
-
 export type CharacterProps =
     {
         id: number,
@@ -25,3 +23,8 @@ export type CharactersGetProps =
         characters: CharacterProps[],
         endOfList: boolean
     }
+
+export type RoutesProps ={
+    home: undefined;
+    searchCharacters: undefined;
+}
