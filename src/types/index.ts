@@ -24,7 +24,9 @@ export type CharactersGetProps =
         endOfList: boolean
     }
 
-export type RoutesProps ={
+export type RoutesProps = {
     home: undefined;
     searchCharacters: undefined;
+    characterDetail: CharacterProps;
 }
+

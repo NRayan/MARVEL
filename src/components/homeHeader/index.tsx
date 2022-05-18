@@ -10,7 +10,6 @@ export function HomeHeader() {
 	const navigation = useNavigation();
 
 	function handleSearchPress() {
-		console.log(1);
 		navigation.navigate("searchCharacters");
 	}
 

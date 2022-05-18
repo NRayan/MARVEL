@@ -1,11 +1,10 @@
-import { Entypo, Feather } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
-import { transparentize } from "polished";
 import React, { useState } from "react";
 import { useTheme } from "styled-components/native";
-import { CharactersList } from "../../components";
-import { Container, Header, Input, Search, Title } from "./styles";
+import { CharactersList, SearchBar } from "../../components";
+import { Container, Header, Title } from "./styles";
 
 export function SearchCharacters() {
 
@@ -26,10 +25,7 @@ export function SearchCharacters() {
 				<Title>Back</Title>
 			</Header>
 
-			<Search>
-				<Feather name="search" size={28} color={transparentize(.6, theme.colors.text)} />
-				<Input placeholder="search..." value={search} onChangeText={setSearch} placeholderTextColor={transparentize(.6, theme.colors.text)} />
-			</Search>
+			<SearchBar value={search} onChangeText={setSearch} />
 
 			<CharactersList searchText={search} />
 

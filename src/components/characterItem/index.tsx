@@ -1,4 +1,5 @@
 import { AntDesign } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { useTheme } from "styled-components/native";
 import { CharacterProps } from "../../types";
@@ -11,6 +12,11 @@ type Props = {
 export function CharacterItem({ character }: Props) {
 
 	const theme = useTheme();
+	const navigation = useNavigation();
+
+	function handleInfoButtonPress() {
+		navigation.navigate("characterDetail", character);
+	}
 
 	return (
 		<Container>
@@ -18,7 +24,7 @@ export function CharacterItem({ character }: Props) {
 			<Content>
 				<Title>{character.name}</Title>
 				<Description numberOfLines={3} ellipsizeMode="tail">{character.description}</Description>
-				<InfoButton>
+				<InfoButton onPress={handleInfoButtonPress}>
 					<InfoButtonTitle>More info</InfoButtonTitle>
 					<AntDesign name="right" size={18} color={theme.colors.text} />
 				</InfoButton>
