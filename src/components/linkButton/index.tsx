@@ -2,18 +2,19 @@ import React from "react";
 import { Container, Title, Highlight } from "./styles";
 import { AntDesign } from "@expo/vector-icons";
 import { useTheme } from "styled-components/native";
+import * as Linking from "expo-linking";
+
 type Props = {
 	title: string,
 	link: string
 }
-
 
 export function LinkButton({ link, title }: Props) {
 
 	const theme = useTheme();
 
 	function handlePress() {
-		console.log(link);
+		Linking.openURL(link);
 	}
 
 	return (

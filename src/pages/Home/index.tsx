@@ -13,7 +13,7 @@ export function Home() {
 
 	return (
 		<Container>
-			<HomeHeader />
+			<HomeHeader searchEnabled={selected===selecionOption.characters}/>
 			<Buttons>
 				<TabButton title="Characters" onPress={() => { setSelected(1); }} selected={selected === 1} />
 				<TabButton title="Comics" onPress={() => { setSelected(2); }} selected={selected === 2} />

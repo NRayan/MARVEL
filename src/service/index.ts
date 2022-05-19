@@ -1,4 +1,4 @@
-import { CharactersGetProps } from "../types";
+import { CharactersGetProps, ComicsGetProps } from "../types";
 import { serviceUtils } from "../utils";
 import { requester } from "./service";
 
@@ -23,6 +23,23 @@ export const requests =
 		} catch (error: any) {
 			handleError(error);
 			return { characters: [], endOfList: true };
+		}
+	},
+	async getComics(page: number): Promise<ComicsGetProps> {
+		try {
+
+			const initialQuery = serviceUtils.mountInitialQuery(PUBLIC_KEY, PRIVATE_KEY);
+			const otherQueries = serviceUtils.mountQuery({ limit: charactersGetLimit, offset: serviceUtils.generateCallOffset(page, charactersGetLimit) });
+
+			const { data } = await requester.get("/comics?" + initialQuery + otherQueries);
+
+			const comics = data.data.results.map(serviceUtils.mapComicsDTO);
+
+			return { comics: comics, endOfList: data.data.limit !== data.data.count };
+
+		} catch (error: any) {
+			handleError(error);
+			return { comics: [], endOfList: true };
 		}
 	}
 };

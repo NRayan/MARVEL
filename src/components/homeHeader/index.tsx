@@ -5,7 +5,13 @@ import { TouchableOpacity } from "react-native";
 import { useTheme } from "styled-components/native";
 import { Container, Title } from "./styles";
 
-export function HomeHeader() {
+type Props =
+	{
+		searchEnabled: boolean
+	}
+
+export function HomeHeader({ searchEnabled }: Props) {
+
 	const theme = useTheme();
 	const navigation = useNavigation();
 
@@ -16,9 +22,12 @@ export function HomeHeader() {
 	return (
 		<Container>
 			<Title>MARVEL</Title>
-			<TouchableOpacity onPress={handleSearchPress}>
-				<Feather name="search" size={28} color={theme.colors.text} />
-			</TouchableOpacity>
+			{
+				searchEnabled &&
+				<TouchableOpacity onPress={handleSearchPress}>
+					<Feather name="search" size={28} color={theme.colors.text} />
+				</TouchableOpacity>
+			}
 		</Container>
 	);
 }
