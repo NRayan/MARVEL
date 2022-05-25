@@ -2,7 +2,7 @@ name: PR - Tests with Jest
 on:
   push:
     branches:
-      -master
+      - master
 jobs:
   publish:
     name: Test
