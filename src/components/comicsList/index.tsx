@@ -18,8 +18,7 @@ export function ComicsList() {
 		try {
 			if (endOfList) return;
 			const response = await requests.getComics(page);
-			const newData = [...comics, ...response.comics];
-			setComics(newData);
+			setComics(prevState => prevState.concat(...response.comics));
 			page += 1;
 			setEndOfList(response.endOfList);
 		} catch (error: any) {

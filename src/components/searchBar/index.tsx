@@ -1,30 +1,33 @@
 import { AntDesign, Feather } from "@expo/vector-icons";
 import { transparentize } from "polished";
-import React from "react";
-import { useTheme } from "styled-components";
+import React, { useEffect, useState } from "react";
+import { useTheme } from "styled-components/native";
 import { ClearButton, Container, Input } from "./styles";
 
 type Props =
 	{
-		value: string,
 		onChangeText: (string) => void
 	}
 
-export function SearchBar({ value, onChangeText }: Props) {
+export function SearchBar({ onChangeText }: Props) {
 
 	const theme = useTheme();
 
+	const [value, setValue] = useState("");
+
+	useEffect(() => { onChangeText(value); }, [value]);
+
 	function handleClearButtonPress() {
-		onChangeText("");
+		setValue("");
 	}
 
 	return (
 		<Container>
 			<Feather name="search" size={28} color={transparentize(.6, theme.colors.text)} style={{ alignSelf: "center" }} />
-			<Input placeholder="search..." value={value} onChangeText={onChangeText} placeholderTextColor={transparentize(.6, theme.colors.text)} />
+			<Input placeholder="search..." value={value} onChangeText={setValue} placeholderTextColor={transparentize(.6, theme.colors.text)} />
 			{
 				!!value &&
-				<ClearButton onPress={handleClearButtonPress}>
+				<ClearButton onPress={handleClearButtonPress} testID="clear-button">
 					<AntDesign name="close" color={theme.colors.text} size={23} />
 				</ClearButton>
 			}

@@ -7,6 +7,7 @@ export function ThumbnailGradient() {
 	const colors = ["transparent", theme.colors.background];
 
 	return (
-		<LinearGradient colors={colors} style={{ position: "absolute", bottom: 0, height: 100, width: "100%" }} />
+		null
+		// <LinearGradient colors={colors} style={{ position: "absolute", bottom: 0, height: 100, width: "100%" }} />
 	);
 }

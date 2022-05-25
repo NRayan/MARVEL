@@ -25,7 +25,7 @@ export function SearchCharacters() {
 				<Title>Back</Title>
 			</Header>
 
-			<SearchBar value={search} onChangeText={setSearch} />
+			<SearchBar onChangeText={setSearch} />
 
 			<CharactersList searchText={search} />
 
