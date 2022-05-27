@@ -60,6 +60,7 @@
       "tsx",
       "js",
       "jsx"
-    ]
+    ],
+    "snapshotResolver": "./snapshotResolver.js"
   }
 }

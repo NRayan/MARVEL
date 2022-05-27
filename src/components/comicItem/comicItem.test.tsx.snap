@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComicItem Should Render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderColor": "#21263e",
+        "borderRadius": 10,
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "height": 130,
+        "marginBottom": 10,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 10,
+        "overflow": "hidden",
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "www.thumb.com",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "aspectRatio": 0.8,
+          "height": "100%",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingBottom": 10,
+          "paddingLeft": 15,
+          "paddingRight": 15,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#FFF",
+            "fontFamily": "Inter_700Bold",
+            "fontSize": 16,
+          },
+        ]
+      }
+    >
+      Comic
+    </Text>
+  </View>
+</View>
+`;

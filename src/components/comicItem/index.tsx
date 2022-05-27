@@ -8,9 +8,6 @@ type Props = {
 
 export function ComicItem({ comic }: Props) {
 
-	// const theme = useTheme();
-	// const navigation = useNavigation();
-
 	return (
 		<Container>
 			<Thumbnail source={{ uri: comic.thumbnail }} />

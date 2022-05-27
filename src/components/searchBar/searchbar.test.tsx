@@ -6,16 +6,16 @@ import { SearchBar } from "./";
 
 describe("SearchBar", () => {
 
-	it("Should Render", () => {
+	it("Should Render correctly", () => {
 
-		const { queryByPlaceholderText } = render(
+		const tree = render(
 			<RenderWithTheme>
 				<SearchBar onChangeText={() => null} />
 			</RenderWithTheme>
-		);
+		).toJSON();
 
-		const textInput = queryByPlaceholderText("search...");
-		expect(textInput).toBeTruthy();
+		expect(tree).toMatchSnapshot();
+
 	});
 
 	it("Should display clear button after typing", () => {
