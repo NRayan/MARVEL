@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1653925217831" clover="3.2.0">
+  <project timestamp="1653925217831" name="All files">
+    <metrics statements="59" coveredstatements="57" conditionals="5" coveredconditionals="5" methods="28" coveredmethods="26" elements="92" coveredelements="88" complexity="0" loc="59" ncloc="59" packages="7" files="13" classes="13"/>
+    <package name="MARVEL">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="snapshotResolver.js" path="C:\Users\Norton\Desktop\Projetos\MARVEL\snapshotResolver.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="MARVEL.src.components.characterItem">
+      <metrics statements="18" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="8"/>
+      <file name="index.tsx" path="C:\Users\Norton\Desktop\Projetos\MARVEL\src\components\characterItem\index.tsx">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="C:\Users\Norton\Desktop\Projetos\MARVEL\src\components\characterItem\styles.ts">
+        <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="MARVEL.src.components.comicItem">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="index.tsx" path="C:\Users\Norton\Desktop\Projetos\MARVEL\src\components\comicItem\index.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="C:\Users\Norton\Desktop\Projetos\MARVEL\src\components\comicItem\styles.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="MARVEL.src.components.homeHeader">
+      <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="3"/>
+      <file name="index.tsx" path="C:\Users\Norton\Desktop\Projetos\MARVEL\src\components\homeHeader\index.tsx">
+        <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="C:\Users\Norton\Desktop\Projetos\MARVEL\src\components\homeHeader\styles.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="MARVEL.src.components.searchBar">
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+      <file name="index.tsx" path="C:\Users\Norton\Desktop\Projetos\MARVEL\src\components\searchBar\index.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="C:\Users\Norton\Desktop\Projetos\MARVEL\src\components\searchBar\styles.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="MARVEL.src.tests">
+      <metrics statements="8" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="3"/>
+      <file name="index.tsx" path="C:\Users\Norton\Desktop\Projetos\MARVEL\src\tests\index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="mocks.ts" path="C:\Users\Norton\Desktop\Projetos\MARVEL\src\tests\mocks.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+      <file name="renderers.tsx" path="C:\Users\Norton\Desktop\Projetos\MARVEL\src\tests\renderers.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="MARVEL.src.theme">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="C:\Users\Norton\Desktop\Projetos\MARVEL\src\theme\index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="20" count="4" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
