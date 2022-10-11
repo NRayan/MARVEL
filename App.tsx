@@ -1,6 +1,7 @@
 import { Inter_400Regular, Inter_500Medium, Inter_600SemiBold, Inter_700Bold, useFonts } from "@expo-google-fonts/inter";
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
+import { TextInput, View } from "react-native";
 import { ThemeProvider } from "styled-components/native";
 import { Loading } from "./src/pages";
 import { Routes } from "./src/routes";
@@ -21,6 +22,13 @@ export default function App() {
 		if (!fontsLoaded) return;
 		setTimeout(() => setLoading(false), 2 * 1000);
 	}, [fontsLoaded]);
+
+
+	function teste({nativeEvent:{text}})
+	{
+		console.log(text)
+		console.log("rodou")
+	}
 
 	return (
 		<>
